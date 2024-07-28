@@ -22,11 +22,9 @@ jobs:
         run: npm install
 
       - name: Build Gatsby site
-        run: gatsby build --prefix-paths
+        run: npm run build --prefix-paths
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          force_orphan: true
+      - name: Deploy Gatsby site
+        run: npm run deploy
+
+
