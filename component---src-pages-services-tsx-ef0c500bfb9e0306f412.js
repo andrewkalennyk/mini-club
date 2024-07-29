@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmini_club=self.webpackChunkmini_club||[]).push([[858],{9098:function(e,t,l){l.r(t);var i=l(7294);t.default=()=>i.createElement("main",null,i.createElement("h1",null,"Services"),i.createElement("p",null,"Hi there! I'm the proud creator of this site, which I built with Gatsby."))}}]);
+//# sourceMappingURL=component---src-pages-services-tsx-ef0c500bfb9e0306f412.js.map
