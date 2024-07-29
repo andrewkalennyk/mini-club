@@ -10,6 +10,7 @@ const config: GatsbyConfig = {
     // Learn more at: https://gatsby.dev/graphql-typegen
     graphqlTypegen: true,
     trailingSlash: "never",
+    pathPrefix: "/mini-club",
     plugins: [
         "gatsby-plugin-sass",
         "gatsby-plugin-image",
@@ -34,9 +35,5 @@ const config: GatsbyConfig = {
     ],
 
 };
-
-module.exports = {
-    pathPrefix: `/mini-club`,
-}
 
 export default config;
