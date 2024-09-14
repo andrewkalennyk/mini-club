@@ -3,7 +3,7 @@ import "./layout.scss"
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ children }) => {
     return (
         <div>
             <Navbar siteTitle={'MiniClub' || `Title`} />

@@ -7,7 +7,7 @@ import Clubs from "../components/clubs/clubs";
 
 const IndexPage = () => {
   return (
-      <Layout pageTitle="MINI CLUB UKRAINE 🇺🇦">
+      <Layout>
           <BackgroundImage></BackgroundImage>
           <div className="section bg-light pt-0 position-relative">
               <div className="container">
@@ -18,12 +18,12 @@ const IndexPage = () => {
                                   <div className="p-3 bg-white shadow w-100">
                                       <h3 className="mb-4 text-center">Наші соціальні мережі</h3>
                                       <div className="row">
-                                          <div className="col-md-6 d-flex align-items-center justify-content-center">
+                                          <div className="col-md-6 col-sm-12 mb-sm-3 d-flex align-items-center justify-content-center">
                                               <Link to="https://www.instagram.com/miniclubukraine/" className="navbar-brand" target={"_blank"}>
                                                 <StaticImage src="../images/miniclubinst.svg" width={200} height={200}  alt={'MiniCLub'}/>
                                               </Link>
                                           </div>
-                                          <div className="col-md-6 d-flex align-items-center justify-content-center">
+                                          <div className="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
                                               <Link to="https://t.me/miniclubua" className="navbar-brand" target={"_blank"}>
                                                 <StaticImage src="../images/miniclubtg.svg" width={200} height={200}  alt={'MiniCLub'}/>
                                               </Link>

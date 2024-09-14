@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className="col-md">
                         <div className="mb-4">
                             <h2>
-                                <a href="#" className="text-uppercase fw-bold text-decoration-none text-white">
+                                <a href='/' className="text-uppercase fw-bold text-decoration-none text-white">
                                     Not <span style={{ color: '#01d28e'}}> Normal</span>
                                 </a>
                             </h2>

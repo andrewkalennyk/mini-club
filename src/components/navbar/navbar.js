@@ -30,13 +30,6 @@ const Navbar = () => {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <ExactNavLink
-                    to="/"
-                >
-                  Події
-                </ExactNavLink>
-              </li>
-              <li className="nav-item">
-                <ExactNavLink
                     to="/services"
                 >
                   Сервіси
