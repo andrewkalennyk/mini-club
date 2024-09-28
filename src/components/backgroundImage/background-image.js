@@ -1,24 +1,24 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby";
 import * as styles from './background-image.module.css';
-import {GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image";
+import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
 const BackgroundImage = ({siteTitle}) => {
     const data = useStaticQuery(graphql`
     query {
-      bgImage: file(relativePath: { eq: "mini_main.webp" }) {
+      bgImage: file(relativePath: { eq: "mini.webp" }) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
             placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
+            formats: [AUTO, JPG]
           )
         }
       }
     }
   `);
+    window.console.log(data);
     const image = getImage(data.bgImage);
-
 
     return (
         <div className={styles.background}>
