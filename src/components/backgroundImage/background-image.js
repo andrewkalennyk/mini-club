@@ -17,7 +17,7 @@ const BackgroundImage = ({siteTitle}) => {
       }
     }
   `);
-    window.console.log(data);
+
     const image = getImage(data.bgImage);
 
     return (
