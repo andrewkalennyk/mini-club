@@ -1,32 +1,10 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby";
+import bgImage from "../../images/mini.webp";
 import * as styles from './background-image.module.css';
-import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
 const BackgroundImage = ({siteTitle}) => {
-    const data = useStaticQuery(graphql`
-    query {
-      bgImage: file(relativePath: { eq: "mini.webp" }) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            placeholder: BLURRED
-            formats: [AUTO, JPG]
-          )
-        }
-      }
-    }
-  `);
-
-    const image = getImage(data.bgImage);
-
     return (
-        <div className={styles.background}>
-            <GatsbyImage
-                image={image}
-                alt="Mini Main"
-                className={styles.backgroundImage}
-            />
+        <div className={styles.background} style={{ backgroundImage: `url(${bgImage})` }}>
             <div className={styles.overlay}></div>
             <div className="container w-100">
                 <div className="row m-0 align-self-center justify-content-center">
